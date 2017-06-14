@@ -1,8 +1,8 @@
 {
   "name": "student-project",
   "private": true,
-  "version": "0.0.0",
-  "description": "a Sails application",
+  "version": "0.0.1",
+  "description": "An RESTful API to manage student data",
   "keywords": [],
   "dependencies": {
     "ejs": "2.3.4",
@@ -31,7 +31,7 @@
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/eschwartz/student-project.git"
+    "url": "git@github.com:tiy-eric/sails-student-api.git"
   },
   "author": "eschwartz",
   "license": ""
