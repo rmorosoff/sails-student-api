@@ -26,7 +26,7 @@ module.exports = {
     major_id: {
       type: 'integer'
     },
-    years_of_expierience: {
+    years_of_experience: {
       type: 'integer',
       maxLength: 2
     },
