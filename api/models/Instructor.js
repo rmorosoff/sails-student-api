@@ -1,5 +1,5 @@
 /**
- * Student.js
+ * Instructor.js
  *
  * @description :: TODO: You might write a short summary of how this model works and what it represents here.
  * @docs        :: http://sailsjs.org/documentation/concepts/models-and-orm/models
@@ -8,7 +8,7 @@
 module.exports = {
 
   attributes: {
-    student_id: {
+    instructor_id: {
       type: 'integer',
       primaryKey: true,
       autoIncrement: true
@@ -23,23 +23,15 @@ module.exports = {
       minLength: 2,
       maxLength: 30
     },
-    gpa: {
-      type: 'decimal',
-    },
-    sat: {
-      type: 'integer',
-      maxLength: 4
-    },
     major_id: {
+      type: 'integer'
+    },
+    years_of_expierience: {
       type: 'integer',
+      maxLength: 2
     },
-    start_date: {
-      type: 'date'
-    },
-    toJSON: function() {
-      var obj = this.toObject();
-      obj.start_date = obj.start_date.slice(0,-14);
-      return obj;
+    tenured: {
+      type: 'boolean'
     }
   },
   autoPK: false

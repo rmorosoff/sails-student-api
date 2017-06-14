@@ -24,5 +24,6 @@ module.exports = {
       type: 'integer',
       maxLength: 4
     }
-  }
+  },
+  autoPK: false
 };
